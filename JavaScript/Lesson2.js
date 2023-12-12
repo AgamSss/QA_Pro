@@ -212,17 +212,24 @@ switch (num) {
 a = 6; // А що трапилося ?*/
 
 // Для виконання ДЗ давайте з вами проговоримо про одне модальне вікно prompt();
-/*var name = prompt("Вкажіть ваше імя", "18");
-console.log(typeof name, Number(name));*/
+// var name = prompt("Вкажіть ваше імя", "18");
+// console.log(typeof name, Number(name));
 
 
 
 // Практика
 // Задача 1: Напишіть програму на JavaScript, яка приймає число від користувача і визначає, чи є введене число парним чи непарним.
 
+// Відповідь
+// Запитуємо користувача про число
+/*var number = 10;
 
-
-
+// Перевіряємо парність числа
+if (number % 2 === 0) {
+    console.log("Число " + number + " - парне.");
+} else {
+    console.log("Число " + number + " - непарне.");
+}*/
 
 
 /*
@@ -233,6 +240,28 @@ console.log(typeof name, Number(name));*/
 - Якщо сума більше 5000 грн, знижка складає 15%.
  */
 
+// Сума покупки
+var purchaseAmount = 350;
+
+// Ініціалізуємо змінну для знижки
+var discount = 0;
+
+// Розраховуємо знижку залежно від суми покупки
+if (purchaseAmount <= 1000) {
+    discount = 0.05; // 5%
+} else if (purchaseAmount > 1000 && purchaseAmount <= 5000) {
+    discount = 0.10; // 10%
+} else {
+    discount = 0.15; // 15%
+}
+
+// Розраховуємо суму до оплати
+var discountedAmount = purchaseAmount - (purchaseAmount * discount);
+
+// Виводимо результати
+console.log("Сума покупки: " + purchaseAmount + " грн");
+console.log("Знижка: " + (discount * 100) + "%");
+console.log("Сума до оплати: " + discountedAmount + " грн");
 
 
 
