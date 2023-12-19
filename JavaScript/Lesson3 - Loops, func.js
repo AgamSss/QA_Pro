@@ -26,10 +26,10 @@ console.log('Кінець завдання');*/
 
 //А може й затягнутися (не треба так робити)
 
-/*while(true){
-	console.log('А я все одно щось зроблю ');
-}
-console.log('Кінець завдання');*/
+// while(true){
+// 	console.log('А я все одно щось зроблю ');
+// }
+// console.log('Кінець завдання');
 
 //do...while - спочатку робимо, потім думаємо
 /*var i = 0;
@@ -38,7 +38,10 @@ do {
     console.log("i=" + i);
 } while (i < 5);
 console.log("Після закінчення циклу i =" + i);*/
-
+// while (i < 5) {
+//     console.log("i=" + i);
+//     i += 2;
+// }
 // do...while обов'язково відпрацює хоча б раз!
 /*do{
     console.log("А я все одно щось зроблю");
@@ -192,7 +195,7 @@ console.log('Бачу: ext='+ext);
 console.log('Бачу: inner='+inner);*/
 
 //Своя сорочка ближче до тіла (народна мудрість)
-var ext = "Зовнішня змінна";
+//var ext = "Зовнішня змінна";
 /*
 function test() {
     var ext = "Внутрішня змінна";
@@ -203,14 +206,14 @@ test();
 console.log('Змінна ext=' + ext);*/
 
 //Усередині функції змінні "спливають" точно так, як і в основному скрипті
-/*function test() {
-    console.log('Спочатку myVar дорівнювала ' + myVar);
-    myVar = "Я маю значення!";
-    console.log('потім myVar=' + myVar);
-    var myVar;
-}
+// function test() {
+//     console.log('Спочатку myVar дорівнювала ' + myVar);
+//     myVar = "Я маю значення!";
+//     console.log('потім myVar=' + myVar);
+//     var myVar;
+// }
 
-test();*/
+// test();
 
 
 // Function Expression
@@ -227,40 +230,41 @@ function printGreeting() {
 }*/
 
 // А що ми тут отримаємо ?
-/*printGreeting()
-let printGreeting = function () {
-    console.log("Hello world")
-}*/
+// printGreeting()
+// let printGreeting = function () {
+//     console.log("Hello world")
+// }
 
 // А якщо так ?
-/*printGreeting();
-var printGreeting = function () {
-    console.log("Hello world")
-}*/
+// var printGreeting = function () {
+//     console.log("Hello world")
+// }
+// printGreeting();
+
 
 // Function Expression корисно використовувати коли ми хочемо в змінній зберігати різні функції
-/*let autoBrand = "ТАВРІЯ";
-let accelerateСar;
-switch (autoBrand) {
-    case "Audi":
-        accelerateСar = function () {
-            let audiSpeedIndex = 100;
-            console.log("Розганяємо авто до 150км: " + audiSpeedIndex * 1.5);
-        }
-        break;
-    case "ТАВРІЯ":
-        accelerateСar = function () {
-            let audiSpeedIndex = 0;
-            console.log("Розганяємо авто до 150км")
-            for (let i = 0; i < 60; i += 10) {
-                audiSpeedIndex += i;
-                console.log(audiSpeedIndex);
-            }
-        }
-        break;
-}
+// let autoBrand = "ТАВРІЯ";
+// let accelerateСar;
+// switch (autoBrand) {
+//     case "Audi":
+//         accelerateСar = function () {
+//             let audiSpeedIndex = 100;
+//             console.log("Розганяємо авто до 150км: " + audiSpeedIndex * 1.5);
+//         }
+//         break;
+//     case "ТАВРІЯ":
+//         accelerateСar = function () {
+//             let audiSpeedIndex = 0;
+//             console.log("Розганяємо авто до 150км")
+//             for (let i = 0; i < 60; i += 10) {
+//                 audiSpeedIndex += i;
+//                 console.log(audiSpeedIndex);
+//             }
+//         }
+//         break;
+// }
 
-accelerateСar();*/
+// accelerateСar();
 
 // Це все чудово, але є певні загальні рекомендації що і як повинна містити функція.
 /*function squareAreaCalculation() {
@@ -319,7 +323,7 @@ let result = squareAreaCalculation(a);
 console.log(result);*/
 
 // А що буде якщо я не передам нічого
-let a = 5;
+//let a = 5;
 
 /*function squareAreaCalculation(side) {
     console.log(side);
@@ -345,9 +349,9 @@ hello('Name', 'Surname', 123 );*/
         greet += name;
     return greet;
 }*/
-//console.log(hello());
+// console.log(hello());
 // console.log(hello('Vsevolod'));
-//console.log(hello('Dmytro', 'Sirko'));
+// console.log(hello('Dmytro', 'Sirko'));
 
 // Інший варіант як можна задати значення за замовчуванням
 /*function hello(name= 'default') {
