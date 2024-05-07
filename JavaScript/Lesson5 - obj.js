@@ -113,7 +113,7 @@ group.teachersInfo();*/
     }
 }
 
-console.log(group.teachersInfo());*/
+console.log(group.teachersInfo());
 
 // Цілком собі законі та всім відомі гетери та сетери
 /*var group = {
@@ -139,21 +139,23 @@ group.setName('Cucucu');
 console.log(group.getName());*/
 
 // Але є також два цікавих методи! get, set !!
-/*const group = {
-    groupName: 'QA pro',
-    students: 17,
-    time: '7.15',
-    teachers: {
-        teacher: 'Ivan',
-        mentor: 'Oleg'
-    },
-    get studentCount() {
-        return group.students;
-    }
-}
-// Виглядає як звичайна властивість, але це не властивість
-console.log(group.studentCount);
-group.studentCount = 'Alex'; */// Cannot set property teachersInfo of #<Object> which has only a getter
+// const group = {
+//     groupName: 'QA pro',
+//     students: 17,
+//     time: '7.15',
+//     teachers: {
+//         teacher: 'Ivan',
+//         mentor: 'Oleg'
+//     },
+//     get studentCount() {
+//         return group.students;
+//     }
+// }
+//    //Виглядає як звичайна властивість, але це не властивість
+// console.log(group.studentCount);
+// group.studentCount = 16; /// Cannot set property teachersInfo of #<Object> which has only a getter
+// console.log(group.studentCount);
+// group.students = 16;
 
 // Додамо set
 /*const group = {
@@ -176,88 +178,95 @@ group.studentCount = 44;
 console.log(group.studentCount);*/
 
 //Функція - це ЗНАЧЕННЯ, таке саме, як number або string
-/*function test() {
-    console.log("Тестова функція!");
-}
+// function test() {
+//     //console.log('Test function!')
+//     return "Тестова функція!"
+// }
 
-var x = "String value";
-//x(); //Ошибка!
-x = test;
-x();
-console.log('x=' + x);*/
+// var x = "String value";
+// //x(); //Ошибка!
+// x = test;
+// //x();
+// console.log('x=' + x());
 
 //Відповідно - методом може бути і функція, оголошена будь-де!
-/*function test(){
-    console.log("Hello, world!");
-}
+// function test(){
+//     console.log("Hello, world!");
+// }
 
-var user = {
-    login: 'root',
-    sayHello: test
-}
+// var user = {
+//     login: 'root',
+//     sayHello: test
+// }
 
-user.sayHello();*/
+// user.sayHello();
 
 //Хотілося б, щоб МЕТОДИ об'єкта працювали з властивостями об'єкта.
-/*var login = 'global login';
-var sName = 'global sName';*/
+var login = 'global login';
+var sName = 'global sName';
 
-/*var user = {
+var user = {
     login: "John",
     sName: "Dow",
     age: 25,
     greet: function (greet1) {
-        //console.log(greet1 + ', object! from ' + login + ' ' + sName); // Свойства это НЕ переменные!
-        console.log(greet1 + ', object! from ' + user.login + ' ' + user.sName);
+        console.log(greet1 + ', object! from ' + login + ' ' + sName); // Свойства это НЕ переменные!
+        //console.log(greet1 + ', object! from ' + user.login + ' ' + user.sName);
     }
 }
-user.greet('hello');*/
+//user.greet('hello');
 
 //this - контекст виконання.
-/*var user = {
+var user = {
     name: "John",
     sName: "Dow",
     age: 25,
     greet: function (greet) {
-        console.log(greet + ', object! from ' + this.name + ' ' + this.xfxdfds + ' ' + this.age);
+        console.log(greet + ', object! from ' + user.name + ' ' + user.age);
     }
 }
-user.greet('hello');*/
+user.greet('hello');
 
-//Контекст залежить лише від того, звідки викликано функцію.
-/*var login='global Login';
-function test() {
-    console.log('this.login=' + this.login);
-}
 
-//test();//Помилка! Однак, варто вимкнути use strict...
+// //Контекст залежить лише від того, звідки викликано функцію.
+// var login='global Login';
+// function test() {
+//     console.log('this.login=' + this.login);
+// }
 
-//А тепер – фокус!
-var user = {
-    login: 'Вася',
-    age: 25,
-    sayHello: test
-}
-user.sayHello();*/
+// test();//Помилка! Однак, варто вимкнути use strict...
+
+// //А тепер – фокус!
+// var user = {
+//     login: 'Вася',
+//     age: 25,
+//     sayHello: test,
+//     sayHello2: function () {
+//         console.log('this.login=' + this.login);
+//     }
+// }
+// user.sayHello();
 
 //"Жонглюємо" методами.
-/*var user1 = {
-    login: 'Вася',
-    age: 25,
-    getInfo: function () {
-        console.log('my name is ' + this.login + ', my age=' + this.age)
-    }
-}
+// var user1 = {
+//     login: 'Вася',
+//     age: 25,
+//     getInfo: function () {
+//         console.log('my name is ' + this.login + ', my age=' + this.age)
+//     }
+// }
 
-var user2 = {
-    login: 'Петя',
-    age: 27
-}
-user2.isHasWork = true;
-user2.getInfo = user1.getInfo;
+// var user2 = {
+//     login: 'Петя',
+//     age: 27
+// }
+// user2.isHasWork = true;
+// user2.getInfo = user1.getInfo;
 
-user1.getInfo();
-user2['getInfo']();*/
+// user1.getInfo();
+// user2['getInfo']();
+
+// console.log(user2);
 
 //Ускладнюємо номер – втрачаємо контекст
 

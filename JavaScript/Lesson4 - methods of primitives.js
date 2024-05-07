@@ -20,65 +20,67 @@ houseAddress.getFullHouseAddress();*/
 //console.log("науковий формат: " + 2e3); // Це можна розшифрувати так: 2 * 10^3, що дорівнює 2000.
 
 //Нічого страшного, якщо ми всі перемішаємо до купи
-/*var res = 0Xff + 1e1 + 5;
-console.log(res);*/
+// var res = 0Xff + 1e1 + 5; "0Xff-0Xff-0Xff"
+// console.log(res);
 
 /*
 Метод isNaN (is Not-a-Number) в JavaScript використовується для перевірки, чи є передане значення нечисловим (NaN) типом.
 Цей метод повертає true, якщо значення є NaN, і false, якщо значення може бути конвертовано в число.
  */
-//let a = 'qwerty' / 10;
-/*console.log(a);
-console.log(isNaN(a));
-console.log(isNaN(undefined)); // Цікаво. Все тому що цей тип не можна конвертувати в число
-console.log(isNaN(NaN));
-console.log(isNaN("qwerty"));*/
+
+// console.log(a);
+// console.log(isNaN(a));
+// console.log(isNaN(undefined)); // Цікаво. Все тому що цей тип не можна конвертувати в число
+// console.log(isNaN(NaN));
+// console.log(isNaN("qwerty"));
 
 
 // Але, ми будемо використовувати це трохи інакше
-/*console.log(Number.isNaN(a));
-console.log(Number.isNaN(undefined)); // Цікаво. Все тому що цей тип не можна конвертувати в число
-console.log(Number.isNaN(NaN));
-console.log(Number.isNaN("qwee"));*/
+//let a = 'qwerty' / 10;
+// console.log(Number.isNaN("asdf"/123));
+// console.log(Number.isNaN(undefined)); // Цікаво. Все тому що цей тип не можна конвертувати в число
+// console.log(Number.isNaN(NaN));
+// console.log(Number.isNaN("qwee"));
 
 /* Метод isNaN спробує перетворити передане значення в число,
  метод Number.isNaN() не перетворює значення, а просто перевіряє, чи воно є NaN
  */
 // Number.isInteger - використовується для перевірки, чи є передане значення цілим числом.
 // console.log(Number.isInteger(42));
-// console.log(Number.isInteger(42.3));
+// console.log(Number.isInteger(42123));
 // console.log(Number.isInteger("qwer"));
 // console.log(Number.isInteger(true));
 // console.log(Number.isInteger(NaN));
 // console.log(Number.isInteger(Infinity));
 
 // Number.isFinite - використовується для перевірки, чи є передане значення скінченим числом
-/*console.log(Number.isFinite(5));
-console.log(Number.isFinite(5.5));
-console.log(Number.isFinite("5"));
-console.log(Number.isFinite(NaN));
-console.log(Number.isFinite(Infinity));
-console.log(Number.isFinite(-Infinity));
-console.log(Number.isFinite("abc"));*/
+// console.log(Number.isFinite(5));
+// console.log(Number.isFinite(5.5));
+// console.log(Number.isFinite("5"));
+// console.log(Number.isFinite(NaN));
+// console.log(Number.isFinite(Infinity));
+// console.log(Number.isFinite(-Infinity));
+// console.log(Number.isFinite("abc"));
 
 //Number.isSafeInteger - перевіряє, чи є передане число "безпечним цілим числом".
 // Безпечне ціле число включає в себе всі цілі числа від -2^53 + 1 до 2^53 - 1
 
-/*console.log(Number.isSafeInteger(5));
-console.log(Number.isSafeInteger(5.5));
-console.log(Number.isSafeInteger("5"));
-console.log(Number.isSafeInteger(2 ** 53));
-console.log(Number.isSafeInteger(2 ** 53 - 1));*/
+// console.log(Number.isSafeInteger(5));
+// console.log(Number.isSafeInteger(5.5));
+// console.log(Number.isSafeInteger("5"));
+// console.log(Number.isSafeInteger(2 ** 53));
+// console.log(Number.isSafeInteger(2 ** 53 - 1));
 
 //Number.parseInt() - його призначення конвертувати рядок в ціле число,
 // використовуючи десяткову систему числення.
-/*console.log(Number.parseInt('12.45'));
-console.log(Number.parseFloat('12.3.4'));
-console.log(Number.parseInt('12px'));
-console.log(Number.parseInt('a123'));
-console.log(Number.parseInt('11', 2)); // Двійкова система
-console.log(Number.parseInt('ff', 16));
-console.log(Number.parseInt('100', 32));*/
+// console.log(Number.parseInt("100 UAH"));
+// console.log(Number.parseFloat("100.99 UAH"));
+// console.log(Number.parseInt('12px'));
+// console.log(Number.parseInt('a123'));
+// console.log(Number.parseInt('11', 2)); // Двійкова система
+// console.log(Number.parseInt('ff', 16));
+// console.log(Number.parseInt('100', 32));
+
 
 // Number.parseFloat - його призначення конвертувати рядок в число з плаваючою точкою
 /*console.log(Number.parseFloat("3.14"));
@@ -88,21 +90,21 @@ console.log(Number.parseFloat("3.14abc"));*/
 
 //Хотілось би також розібрати бібліотеку Math
 //Округлення
-/*console.log("floor: из 3.6 до " + Math.floor(3.6)); //вниз
-console.log('ceil: из 3.1 до ' + Math.ceil(3.1)); //вгору
-console.log('round: из 3.4 до ' + Math.round(3.4)); //до найближчого
-console.log('round: из 3.7 до ' + Math.round(3.7)); //до найближчого*/
+// console.log("floor: из 3.6 до " + Math.floor(3.6)); //вниз
+// console.log('ceil: из 3.1 до ' + Math.ceil(3.1)); //вгору
+// console.log('round: из 3.4 до ' + Math.round(3.5)); //до найближчого
+// console.log('round: из 3.7 до ' + Math.round(3.7)); //до найближчого*/
 
 
 //заокруглення до заданого знака.
-/*var n = 12.66467;
-var str = n.toFixed(1); //скільки знаків після коми залишити
-console.log(n + ' => ' + str);*/
+// var n = 12.66467;
+// var str = n.toFixed(1); //скільки знаків після коми залишити
+// console.log(n + ' => ' + str);
 
 
 //Генератор случайных чисел.
-/*var rnd = Math.random();
-console.log('rnd=' + rnd);*/
+var rnd = Math.random();
+console.log('rnd=' + rnd);
 
 //Більш практична задача: ціле випадкове число від 1 до 10:
 /*
@@ -171,16 +173,16 @@ console.log(str);*/
 console.log(myString.length);*/
 
 // charAt - дозволяє отримати символ за певним індексом у рядку.
-/*const str = "Hello, world!";
-console.log(str.charAt(0));
-console.log(str.charAt(6));
-console.log(str.charAt(13));*/ // Пустий рядок
+// const str = "Hello, world!";
+// console.log(str.charAt(0));
+// console.log(str.charAt(6));
+// console.log(str.charAt(13)); // Пустий рядок
 
 //А тепер докладніше. charAt()
-/*var str = "Якийсь рядок просто для прикладу";
-console.log(str);
-console.log("Символ номер три: " + str.charAt(3));
-console.log("Те саме по іншому: " + str[3]);*/
+// var str = "Якийсь рядок просто для прикладу";
+// console.log(str);
+// console.log("Символ номер три: " + str.charAt(3));
+// console.log("Те саме по іншому: " + str[3]);
 
 //І не обов'язково бути змінною
 
@@ -201,9 +203,9 @@ console.log(str.concat('Pro!', ' in Hillel school!'));*/
 // const str = "script.js";
 // console.log(str.endsWith(".js"));
 // console.log(str.endsWith("script"));
-//console.log(str.endsWith("js", 6)); //  параметр, який вказує довжину основного рядка, яку слід враховувати при пошуку.
-//console.log(str.endsWith("js", 9));
-//console.log(str.endsWith('ript',6))
+// console.log(str.endsWith("js", 6)); //  параметр, який вказує довжину основного рядка, яку слід враховувати при пошуку.
+// console.log(str.endsWith("js", 9));
+// console.log(str.endsWith('ript',6))
 
 // includes - дозволяє перевірити, чи міститься певний підрядок (для рядків)
 //const str = "Hello, world!";
@@ -213,8 +215,8 @@ console.log(str.includes("World"));*/
 console.log(str.includes("world", 7));*/
 
 // indexOf - дозволяє знайти індекс першого входження певного підрядка у вихідному рядку.
-//const str = "Hello, world!";
-/*console.log(str.indexOf("world"));
+/*const str = "Hello, world!";
+console.log(str.indexOf("world"));
 console.log(str.indexOf("World"));*/ // А ось тут цікаво !
 /*console.log(str.indexOf("o", 5));
 console.log(str.indexOf("o", 9));*/
@@ -240,8 +242,8 @@ console.log('  hello  '.trim());*/
 
 // toLowerCase/toUpperCase - це методи для рядків які використовуються для зміни регістру символів у рядку.
 //var str = "Ось така дивна строчка";
-/*console.log(str.toUpperCase());
-console.log(str.toLowerCase());*/
+//console.log(str.toUpperCase());
+//console.log(str.toLowerCase());*/
 /*console.log("І один у полі воїн"[3].toUpperCase());
 console.log("  А ще можна Ось так  ".toUpperCase().trim().concat("!"))*/
 
@@ -255,20 +257,20 @@ console.log("str[4]=" + str[4]);
 str[5] = "F";   //Помилка
 console.log(str);*/
 //Ну а якщо ДУЖЕ хочеться? (практика)
-//var str = "Якийсь рядок просто для прикладу";
-/*var res = str.replace(' ', '_');
-console.log(res);
-console.log(str);*/
+// var str = "Якийсь рядок просто для прикладу";
+// var res = str.replace(' ', '_');
+// console.log(res);
+// console.log(str);
 /*var replaceAll = str.replaceAll('','*');
 console.log(replaceAll);*/
 
 //substring/substr/slice - ці методи дозволяють вам вирізати частину рядка,
 // починаючи з певного індексу і закінчуючи іншим індексом.
 //У найпростішому випадку всі три працюють однаково
-/*var str = "стрибок з хитроперепідвивертом";
-console.log(str.substr(9));
-console.log(str.substring(9));
-console.log(str.slice(9));*/
+// var str = "стрибок з хитроперепідвивертом";
+// console.log(str.substr(9));
+// console.log(str.substring(9));
+// console.log(str.slice(9));
 
 
 //Негативний аргумент

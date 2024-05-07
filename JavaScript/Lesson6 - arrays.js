@@ -12,6 +12,8 @@
 var arr = [10, "John", true];
 console.log(arr);*/
 
+
+
 // Додавання значень
 //var arr = ['Oleg', 'Olga', 'Mikola'];
 /*arr[3] = 'Koly';
@@ -23,9 +25,10 @@ console.log(arr)*/
 
 // Навіть видалити можна значення, але так не бажано!
 //Оператор delete видалить елемент масиву, але залишить його індекс з властивістю undefined.
-/*delete arr[0];
-console.log(arr)
-console.log(arr[0])*/
+const arr1 = [1, null, undefined, "str", [1, 2,3], {"name": "test"} ];
+delete arr1[0];
+console.log(arr1)
+console.log(arr1[0])
 
 //Масив також має властивості
 /*
@@ -63,22 +66,22 @@ console.log(Array.isArray(notArr));
 */
 
 //Перебір масиву
-var arr = ["перший", "другий", "ще один"];
-//Робимо масив з "діркою", а краще казати розрідженим
-arr[5] = "багато";
-/*for (let i = 0; i < arr.length; i++) {
-    console.log("arr[" + i + "]=" + arr[i]);
-}*/
+// var arr = ["перший", "другий", "ще один"];
+// //Робимо масив з "діркою", а краще казати розрідженим
+// arr[5] = "багато";
+// for (let i = 0; i < arr.length; i++) {
+//     console.log("arr[" + i + "]=" + arr[i]);
+// }
 
 // Якщо спробувати for in
-/*var arr = ["перший", "другий", "ще один"];
-arr[11] = "багато";
-arr.someNew = '12345er'; // Можемо зробити наш масив трохи асоціативним*/
-/*for (let i in arr) {
-    console.log("arr[" + i + "] = " + arr[i]);
-}
-//Але чому дорівнює довжина такого масиву?
-console.log("length of arr = " + arr.length);*/
+// var arr = ["перший", "другий", "ще один"];
+// arr[11] = "багато";
+// arr.someNew = '12345er'; // Можемо зробити наш масив трохи асоціативним*/
+// for (let i in arr) {
+//     console.log("arr[" + i + "] = " + arr[i]);
+// }
+// //Але чому дорівнює довжина такого масиву?
+// console.log("length of arr = " + arr.length);
 
 // Як буде виглядати вивід саме через класичний for!
 /*
@@ -90,11 +93,11 @@ for (let i = 0; i < arr.length; i++) {
 
 // Методи масиву
 //Перетворення масиву на рядок
-/*var arr = [1, 2, 3, 4, 5];
-//arr[9] = 10;
+var arr = [1, 2, 3, 4, 5];
+arr[9] = 10;
 console.log('toString() : ' + arr.toString());
 console.log('join без параметрів : ' + arr.join());	// склеює масив у рядок
-console.log('join з параметром : ' + arr.join('++'));// можна вказати роздільник*/
+console.log('join з параметром : ' + arr.join(' '));// можна вказати роздільник*/
 
 //Метод toString() - використовується для перетворення об'єкта на його рядкове представлення.
 // У випадку масивів метод toString() повертає рядок, який містить всі елементи масиву, розділені комами.
@@ -110,15 +113,15 @@ console.log(typeof str);*/
 //console.log(typeof true.toString())
 
 //І до речі, відчуйте різницю:
-/*var arr = [1, 2, 3, 4, 5];
-console.log('Звичайний вивід масиву: ');
-console.log(arr);
-console.log('Масив покажись: ' + arr)*/
+// var arr = [1, 2, 3, 4, 5];
+// console.log('Звичайний вивід масиву: ');
+// console.log(arr);
+// console.log('Масив покажись: ' + arr)
 
 //Дія зворотна join - split
-/*var str = "Був рядок із пробілами. Став масив слів";
-var arr = str.split(' '); //Вказуємо символ, яким будемо " розбивати "
-console.log(arr);*/
+// var str = "Був рядок із пробілами. Став масив слів";
+// var arr = str.split(' '); //Вказуємо символ, яким будемо " розбивати "
+// console.log(arr);
 
 //Склеювання масивів
 /*var a = [1, 2];
@@ -312,7 +315,7 @@ function checker(item) {
 
 //reduce - "згортання" масиву, обчислення із збереженням проміжного результату
 //callback(previousValue, currentItem, index, arr):
-/*var arr = [1, 2, 3, 4, 5];
+var arr = [1, 2, 3, 4, 5];
 //var res = arr.reduce(myAction);
 //var res = arr.reduce(myAction, 12); // "стартове" значення
 //var res = arr.reduce(myAction, 0);
@@ -325,7 +328,7 @@ function myAction(accumulator, currentValue, index, array) {
     console.log('-----\n' + 'now in accumulator: ' + accumulator);
     console.log('arr[' + index + ']=' + currentValue);
     return accumulator + currentValue;
-}*/
+}
 
 // Ще приклад сума масиву тільки для непарних чисел, як приклад
 /*var arr = [1, 2, 3, 4, 5];

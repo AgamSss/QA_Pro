@@ -9,8 +9,8 @@
 // console.log(null ?? true);
 // console.log(undefined ?? true);
 // console.log("" ?? true);
-//console.log("Hillel" ?? false)
-//console.log(undefined ?? null ?? false)
+// console.log("Hillel" ?? false)
+// console.log(undefined ?? null ?? false)
 
 
 /**

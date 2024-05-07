@@ -8,15 +8,15 @@ while (i < 3) {
 
 
 // Пару слів про "локальні" змінні
-/*let local = "Зовнішня змінна";
-var i = 5;
-while (i) {
-    i--;
-    let local = "внутрішня змінна";
-    console.log("всередині циклу local=\"" + local + "\"");
-}
-console.log("Після закінчення циклу i =" + i);
-console.log("А змінна local=\"" + local + "\"");*/
+// let local = "Зовнішня змінна";
+// var i = 5;
+// while (i) {
+//     i--;
+//     let local = "внутрішня змінна";
+//     console.log("всередині циклу local=\"" + local + "\"");
+// }
+// console.log("Після закінчення циклу i =" + i);
+// console.log("А змінна local=\"" + local + "\"");
 
 //Цикл while може закінчитися, так і не розпочавшись
 /*while(false){
@@ -123,15 +123,18 @@ for (let i = 1; i <= 9; i++){
 }*/
 
 //Мітки для циклів
-/*label: for (let i = 1; i <= 9; i++) {
-    for (let j = 1; j <= 9; j++) {
+let label = true
+label: for (let i = 1; i <= 9; i++) {
+    if (label) {
+        for (let j = 1; j <= 9; j++) {
         if (j === 5) {
             console.log("----------------------------")
-            continue label;
+            label = false
         }
         console.log("Результат множення " + i + " * " + j + " = " + i * j);
-    }
-}*/
+    }}
+    
+}
 
 /*label: for (let i = 1; i <= 9; i++) {
     for (let j = 1; j <= 9; j++) {
@@ -370,7 +373,6 @@ console.log(hello('Volodimir'));*/
 }
 
 accelerateCar(console.log, 200);*/
-
 
 
 
